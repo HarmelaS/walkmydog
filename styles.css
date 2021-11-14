@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+}
+
+[class*="col"] {
+  height: auto;
+  width: 100%;
+  padding: 50px;
+  margin: 5px auto;
+  overflow: hidden;
+}
+
+/*headings*/
+h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2.5vw;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #ff6d00;
+}
+
+h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #626262;
+}
+
+h3 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #ff6d00;
+}
+
+h4 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: #ff914d;
+}
+
+h5 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: #ff914d;
+}
+
+/*paragraphs*/
+.information {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+  color: #626262;
+  margin-left: 50px;
+}
+
+.infoSub {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+  color: #ff914d;
+  margin-left: 50px;
+}
+
+.description {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2.2vh;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 2;
+  color: #626262;
+}
+
+.footerDesc {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #000000;
+}
+
+/* main */
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.row::after {
+  clear: both;
+  display: table;
+}
+
+.info {
+  margin: 0px;
+  text-align: left;
+  padding: 10px;
+}
+
+.subject {
+  text-align: left;
+}
+
+li {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2.2vh;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 2;
+  color: #626262;
+  margin: 10px 0px;
+}
+
+.footer {
+  margin-bottom: 0px;
+}
+
+/* For Desktop */
+@media screen and (min-width: 768px) {
+  [class*="col"] {
+    padding: 0px;
+  }
+
+  .wmdContext,
+  .dogImg {
+    padding-bottom: 150px;
+  }
+
+  .wmd-wrapper {
+    /*padding: 40px;*/
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .risk-req-wrapper {
+    padding: 0px 100px 100px 100px;
+  }
+
+  .col-1 {
+    width: 33.3%;
+    float: left;
+  }
+
+  .col-2 {
+    width: 50%;
+    float: left;
+  }
+
+  .col-3 {
+    width: 100%;
+  }
+
+  .row {
+    padding-top: 20px;
+    padding-bottom: 100px;
+  }
+
+  .wmdContext {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .sideImage {
+    width: 100%;
+    max-width: 433px;
+    height: auto;
+    margin-right: 10px;
+    float: right;
+  }
+
+  .userCard-left,
+  .userCard-right {
+    width: 500px;
+    height: 700px;
+    margin-left: 0px;
+  }
+
+  .userFlowchart {
+    width: 1000px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .dataFlow {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .wmdLogos {
+    width: 500px;
+    height: 255px;
+    float: left;
+  }
+
+  .wmdTypography {
+    width: 453px;
+    height: 300px;
+    float: right;
+  }
+
+  .colorSwatch {
+    width: 633px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .wmdColors {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 3vw;
+  }
+}

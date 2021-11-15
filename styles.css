@@ -2,12 +2,13 @@
   box-sizing: border-box;
   border: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 [class*="col"] {
   height: auto;
   width: 100%;
-  padding: 50px;
+  padding: 10px;
   margin: 5px auto;
   overflow: hidden;
 }
@@ -15,15 +16,16 @@
 /*headings*/
 h1 {
   font-family: "Nunito Sans", sans-serif;
-  font-size: 2.5vw;
+  font-size: 6vw;
   font-weight: 800;
   letter-spacing: 0.5px;
   color: #ff6d00;
+  text-align: center;
 }
 
 h2 {
   font-family: "Nunito Sans", sans-serif;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 400;
   letter-spacing: 0.5px;
   color: #626262;
@@ -31,16 +33,17 @@ h2 {
 
 h3 {
   font-family: "Nunito Sans", sans-serif;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 800;
   letter-spacing: 0.5px;
   color: #ff6d00;
+  text-align: center;
 }
 
 h4 {
   font-family: "Nunito Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 600;
   letter-spacing: 0.8px;
   color: #ff914d;
 }
@@ -56,29 +59,30 @@ h5 {
 /*paragraphs*/
 .information {
   font-family: "Nunito Sans", sans-serif;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 400;
   letter-spacing: 1.6px;
   color: #626262;
-  margin-left: 50px;
+  margin-left: 10px;
 }
 
 .infoSub {
   font-family: "Nunito Sans", sans-serif;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 400;
   letter-spacing: 1.6px;
   color: #ff914d;
-  margin-left: 50px;
 }
 
 .description {
   font-family: "Nunito Sans", sans-serif;
-  font-size: 2.2vh;
   font-weight: 300;
+  font-size: 13px;
   letter-spacing: 0.5px;
   line-height: 2;
   color: #626262;
+  text-align: center;
+  padding: 0px 10px;
 }
 
 .footerDesc {
@@ -86,13 +90,24 @@ h5 {
   font-size: 24px;
   font-weight: 300;
   color: #000000;
+  padding-bottom: 20px;
 }
 
 /* main */
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.desktopImg {
+  display: none;
+}
+
+.dogImg {
+  margin: 50px 0px;
+  padding: 0px 50px;
 }
 
 .row::after {
@@ -106,28 +121,124 @@ img {
   padding: 10px;
 }
 
+.info:last-child {
+  padding-bottom: 60px;
+}
+
 .subject {
-  text-align: left;
+  text-align: center;
+}
+
+.requirements,
+.risks {
+  padding: 20px;
+}
+
+.listing {
+  padding-left: 20px;
 }
 
 li {
   font-family: "Nunito Sans", sans-serif;
-  font-size: 2.2vh;
   font-weight: 300;
+  font-size: 14px;
   letter-spacing: 0.5px;
-  line-height: 2;
+  line-height: 1.5;
   color: #626262;
   margin: 10px 0px;
 }
 
+.dataFlow {
+  padding: 20px 20px 90px 20px;
+}
+
+.wmdLogos,
+.wmdTypography,
+.wmdColors {
+  padding-bottom: 50px;
+}
+
+.mobileImg,
+.centerImg {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.newFeature:last-child {
+  padding-bottom: 50px;
+}
+
 .footer {
   margin-bottom: 0px;
+  height: auto;
+  background-color: #ff914d;
+  text-align: center;
+}
+
+.footerDesc {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.portLink {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.portLink:hover {
+  color: #626262;
+}
+
+.buttonWrapper {
+  padding-top: 40px;
+  padding-bottom: 0px;
+}
+
+.fas:hover,
+.backToTop:hover {
+  color: #626262;
+}
+
+.backToTop {
+  text-decoration: none;
+}
+
+i {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.fas {
+  color: #ffffff;
+}
+
+.backToTop:hover {
+  color: #ff914d;
 }
 
 /* For Desktop */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   [class*="col"] {
-    padding: 0px;
+    padding: 50px;
+  }
+
+  h1 {
+    font-size: 2.5vw;
+  }
+
+  .information,
+  .infoSub {
+    margin-left: 4px;
   }
 
   .wmdContext,
@@ -137,12 +248,12 @@ li {
 
   .wmd-wrapper {
     /*padding: 40px;*/
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 
   .risk-req-wrapper {
-    padding: 0px 100px 100px 100px;
+    padding: 20px;
   }
 
   .col-1 {
@@ -182,6 +293,12 @@ li {
     width: 500px;
     height: 700px;
     margin-left: 0px;
+    padding-bottom: 100px;
+  }
+
+  .usersLeft,
+  .usersRight {
+    padding: 0px 0px 100px 0px;
   }
 
   .userFlowchart {
@@ -200,15 +317,23 @@ li {
   }
 
   .wmdLogos {
-    width: 500px;
-    height: 255px;
+    /*width: 500px;
+    height: 255px;*/
     float: left;
   }
 
   .wmdTypography {
-    width: 453px;
-    height: 300px;
+    /*width: 453px;
+    height: 300px;*/
     float: right;
+  }
+
+  .mobileImg {
+    display: none;
+  }
+
+  .desktopImg {
+    display: block;
   }
 
   .colorSwatch {

@@ -4,28 +4,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Nunito-Sans" type="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" type="stylesheet">
-        <link rel="stylesheet" href="/styles.css" type="text/css">
-        <title>WalkMyDog | A Mobile App</title>
+        <script src="https://kit.fontawesome.com/aa349b9932.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <title>WalkMyDog | Mobile </title>
     </head>
     <body>
         <div class="container">
             <div class="header">
-                <img class="banner" src="images/banner.png" width="1440" height="440" alt="banner image">
+                <img class="banner" id="top" src="images/banner.png" width="1440" height="440" alt="banner image">
             </div>
             
             <div class="row">
 
                 <div class="col-1 info">
+                    <!--
                     <p class="information">Role:</p>
                     <p class="infoSub">Research, Visuals, Prototyping</p>
+                    -->
+                    <p class="information">Role: <span class="infoSub">Research, Visuals, Prototyping</span></p>
                 </div>
                 <div class="col-1 info">
-                    <p class="information">Type:</p>
-                    <p class="infoSub">Mobile iOS & Android</p>
+                    <p class="information">Type: <span class="infoSub">Mobile iOS & Android</span></p>
                 </div>
                 <div class="col-1 info">
-                    <p class="information">Tools Used:</p>
-                    <p class="infoSub">Pen & Paper, Affinity Designer, Figma</p>
+                    <p class="information">Tools Used: <span class="infoSub">Pen & Paper, Figma, Affinity Designer</span></p>
                 </div>
 
             </div>
@@ -69,7 +71,7 @@
                 <div class="col-3 wrapper">
                     <div class="col-2 requirements">
                         <h2 style="text-align:center;">Requirements</h2>
-                        <h4 style="text-align: center;">Requsted from owners in development.</h4>
+                        <h4 style="text-align: center;">Requsted from owners in <br>development.</h4>
                         <br>
                         <div class="risk-req-wrapper">
                             <ul class="listing">
@@ -94,7 +96,7 @@
     
                     <div class="col-2 risks">
                         <h2 style="text-align:center;">Risks</h2>
-                        <h4 style="text-align: center;">Potential risks with the WalkMyDog app.</h4>
+                        <h4 style="text-align: center;">Potential risks with the <br>WalkMyDog app.</h4>
                         <br>
                         <div class="risk-req-wrapper">
                             <ul class="listing">
@@ -121,17 +123,23 @@
                 <!-- users sections -->
                 <div class="col-3 subject">
                     <h2>The Users</h2>
+                    <br>
+                    <h4 style="text-align: center;">
+                    The personas who would greatly benefit from this app. These are their stories
+                    and what they are looking for in a dog walking service. 
+                    </h4>
+                    <br>
                 </div>
                 <div class="col-2 usersLeft">
                     <div class="userCard-left">
-                        <img src="/images/userOne.png" width="500" height="300" alt="user one persona card">
-                        <img src="/images/userTwo.png" width="500" height="300" alt="user two persona card">
+                        <img class="centerImg" src="images/userOne.png" width="380" height="400" alt="user one persona card">
+                        <img class="centerImg" src="images/userTwo.png" width="380" height="400" alt="user two persona card">
                     </div>
                 </div>
                 <div class="col-2 usersRight">
                     <div class="userCard-right">
-                        <img src="/images/userThree.png" width="500" height="300" alt="user three persona card">
-                        <img src="/images/userFour.png" width="500" height="300" alt="user four persona card">
+                        <img class="centerImg" src="images/userThree.png" width="380" height="400" alt="user three persona card">
+                        <img class="centerImg" src="images/userFour.png" width="380" height="400" alt="user four persona card">
                     </div>
                 </div>
 
@@ -139,32 +147,45 @@
                 
                 <div class="col-3 subject">
                     <h2>The Design</h2>
+                    <br>
                     <h3>User Flow</h3>
+                    <br>
+                    <h4 style="text-align: center; padding-bottom: 30px;">
+                        The sitemaps below display how the app will flow for the users of WalkMyDog.
+                        This takes into account the dog owners, walkers, and the administrators of
+                        the WalkMyDog app.
+                    </h4>
                 </div>
 
                 <div class="col-3 userFlow">
-                    <img class="userFlowchart" src="/images/owner.svg" width="1440" height="1024" alt="app flowchart for dog owner">
+                    <h4 style="text-align: center;">For Dog Owners</h4>
+                    <img class="userFlowchart" src="images/owner.svg" width="1440" height="1024" alt="app flowchart for dog owner">
                 </div>
                 <div class="col-3 userFlow">
-                    <img class="userFlowchart" src="/images/walker.svg" width="1440" height="1024" alt="app flowchart for dog walker">
+                    <h4 style="text-align: center;">For Dog Walkers</h4>
+                    <img class="userFlowchart" src="images/walker.svg" width="1440" height="1024" alt="app flowchart for dog walker">
                 </div>
                 <div class="col-3 userFlow">
-                    <img class="userFlowchart" src="/images/admin.svg" width="1440" height="1024" alt="app flowchart for administrator">
+                    <h4 style="text-align: center;">For Administrators</h4>
+                    <img class="userFlowchart" src="images/admin.svg" width="1440" height="1024" alt="app flowchart for administrator">
                 </div>
                 <div class="col-3 userFlow">
                     <h3>Data Flow</h3>
-                    <img class="dataFlow" src="/images/dataFlowDesign.svg" width="1440" height="1024" alt="figure showing data flow in app">
+                    <h4 style="text-align: center;">The figure below shows how data will flow between the users.</h4>
+                    <img class="dataFlow" src="images/dataFlowDesign.svg" width="1440" height="1024" alt="figure showing data flow in app">
                 </div>
 
                 <!-- design section | WMD deconstructed -->
 
                 <div class="wmdDeconst">
-                    
+                    <h3 style="padding-bottom: 10px;">Interface Deconstruction</h3>
+                    <h4 style="text-align: center; padding-bottom: 30px;">I tried to keep the elements and colors of the app <br> consistent and simple throughout.</h4>
                     <div class="col-2 wmdLogos">
-                        <img src="/images/logos.svg" alt="images of the logo">
+                        <img class="centerImg" src="images/logos.svg" alt="images of the logo">
                     </div>
                     <div class="col-2 wmdTypography">
-                        <img src="/images/typography.svg" alt="image of the typography">
+                        <img class="desktopImg" src="images/typography.svg" alt="image of the typography">
+                        <img class="mobileImg" src="images/mobileTypography.svg" alt="image of the typography">
                     </div>
                     <div class="col-3 wmdColors">
                         <img class="colorSwatch" src="images/colors.svg" width="633" height="200" alt="images of the color palette"> 
@@ -189,30 +210,57 @@
 
                 <div class="col-3 subject">
                     <h2>Future Iterations</h2>
+                    <h4 style="text-align: center;">Future features that WalkMyDog <br> is keeping in mind after initial launch.</h4>
                 </div>
 
                 <div class="wmdFuture">
 
                     <div class="col-2 newFeature">
                         <h3>Grooming</h3>
+                        <p class="description">
+                            This will enable customers to purchase an
+                            added service to have their dogs groomed.
+                        </p>
                     </div>
                     <div class="col-2 newFeature">
                         <h3>Products</h3>
+                        <p class="description">
+                            This feature will enable customers to buy
+                            original & third-party WalkMyDog merchandise.
+                        </p>
                     </div>
                     <div class="col-2 newFeature">
                         <h3>Training</h3>
+                        <p class="description">
+                            This feature will enable dog owners on the app 
+                            to purchase dog training sessions to meet their
+                            dog's needs.
+                        </p>
                     </div>
                     <div class="col-2 newFeature">
-                        <h1>Promotions & Gifts</h1>
+                        <h3>Promotions & Gifts</h3>
+                        <p class="description">
+                            This feature will enable customers to redeem 
+                            special rates or discounts on services or
+                            future products.
+                        </p>
                     </div>
 
                 </div>
 
                 <!-- footer section -->
 
-                <div class="col-4 footer">
+                <div style="padding: 20px;" class="col-4 footer">
                     <div class="footer">
                         <p class="footerDesc">Harmela Seifu | Front End & UI Developer</p>
+                        <a class="portLink" href="#">Portfolio</a>
+                        <br>
+                        <div class="buttonWrapper">
+                            
+                            <a class="portLink" href="#top"><i class="fas fa-chevron-up fa-3x"></i></a>
+                            
+                        </div>
+       
                     </div>
                 </div>
 

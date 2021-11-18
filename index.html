@@ -17,17 +17,31 @@
             <div class="row">
 
                 <div class="col-1 info">
-                    <!--
-                    <p class="information">Role:</p>
-                    <p class="infoSub">Research, Visuals, Prototyping</p>
-                    -->
-                    <p class="information">Role: <span class="infoSub">Research, Visuals, Prototyping</span></p>
+                    <div class="desktopInfo">
+                        <p class="information">Role:</p>
+                        <p class="infoSub">Research, Visuals, Prototyping</p>
+                    </div>         
+                    <div class="mobileInfo">
+                        <p class="information">Role: <span class="infoSub">Research, Visuals, Prototyping</span></p>
+                    </div>
                 </div>
                 <div class="col-1 info">
-                    <p class="information">Type: <span class="infoSub">Mobile iOS & Android</span></p>
+                    <div class="desktopInfo">
+                        <p class="information">Type:</p>
+                        <p class="infoSub">Mobile iOS and Android</p>
+                    </div>         
+                    <div class="mobileInfo">
+                        <p class="information">Type: <span class="infoSub">Mobile iOS and Android</span></p>
+                    </div>
                 </div>
                 <div class="col-1 info">
-                    <p class="information">Tools Used: <span class="infoSub">Pen & Paper, Figma, Affinity Designer</span></p>
+                    <div class="desktopInfo">
+                        <p class="information">Tools Used:</p>
+                        <p class="infoSub">Pen & Paper, Figma, Affinity Designer</p>
+                    </div>         
+                    <div class="mobileInfo">
+                        <p class="information">Tools Used: <span class="infoSub">Pen & Paper, Figma, Affinity Designer</span></p>
+                    </div>
                 </div>
 
             </div>
@@ -37,7 +51,7 @@
                 <!-- content section -->
                <div class="wmd-wrapper">
                 <div class="col-2 wmdContext">
-                    <h1>The Problem</h1><br>
+                    <h1>The Problem</h1>
                     <p class="description">
                         Dog owners don’t always have the neccessary time to properly
                         care for their pets. From issues of health to a hectic lifestyle,
@@ -46,7 +60,7 @@
                     </p>
                     <br>
                     <br>
-                    <h1>The Solution</h1><br>
+                    <h1>The Solution</h1>
                     <p class="description">
                         The vision for WalkMyDog is the opportunity to cover a large 
                         market of dog-owners & provide them with a service that, with
@@ -54,7 +68,7 @@
                     </p>
                     <br>
                     <br>
-                    <h1>The Goal</h1><br>
+                    <h1>The Goal</h1>
                     <p class="description">
                         Our goal is to create a mobile app that gives users access to
                         many of our walk services, including scheduled, ASAP, and
@@ -70,8 +84,8 @@
                 <!-- requirements & risks section -->
                 <div class="col-3 wrapper">
                     <div class="col-2 requirements">
-                        <h2 style="text-align:center;">Requirements</h2>
-                        <h4 style="text-align: center;">Requsted from owners in <br>development.</h4>
+                        <h2 style="text-align: center;">Requirements</h2>
+                        <h4 style="padding:0px;">Requsted from owners in development.</h4>
                         <br>
                         <div class="risk-req-wrapper">
                             <ul class="listing">
@@ -89,14 +103,13 @@
                                     Must use modern programming practices, so it can be easily
                                     modified later.
                                 </li>
-                                <li>Layout must be clean and easy to use for all types of users.</li>
                             </ul>
                         </div>
                     </div>
     
                     <div class="col-2 risks">
-                        <h2 style="text-align:center;">Risks</h2>
-                        <h4 style="text-align: center;">Potential risks with the <br>WalkMyDog app.</h4>
+                        <h2 style="text-align: center;">Risks</h2>
+                        <h4 style="padding:0px;">Potential risks with the WalkMyDog app.</h4>
                         <br>
                         <div class="risk-req-wrapper">
                             <ul class="listing">
@@ -125,22 +138,24 @@
                     <h2>The Users</h2>
                     <br>
                     <h4 style="text-align: center;">
-                    The personas who would greatly benefit from this app. These are their stories
+                    The personas who would greatly benefit from this app. These are their <br>stories
                     and what they are looking for in a dog walking service. 
                     </h4>
                     <br>
                 </div>
-                <div class="col-2 usersLeft">
-                    <div class="userCard-left">
-                        <img class="centerImg" src="images/userOne.png" width="380" height="400" alt="user one persona card">
-                        <img class="centerImg" src="images/userTwo.png" width="380" height="400" alt="user two persona card">
+                <div class="usersWrapper">
+                    <div class="col-2 usersLeft">
+                        <div class="userCard-left">
+                            <img class="centerImg" src="images/userOne.jpg" width="550" height="300" alt="user one persona card">
+                            <img class="centerImg" src="images/userTwo.jpg" width="550" height="300" alt="user two persona card">
+                        </div>
                     </div>
-                </div>
-                <div class="col-2 usersRight">
-                    <div class="userCard-right">
-                        <img class="centerImg" src="images/userThree.png" width="380" height="400" alt="user three persona card">
-                        <img class="centerImg" src="images/userFour.png" width="380" height="400" alt="user four persona card">
-                    </div>
+                    <div class="col-2 usersRight">
+                        <div class="userCard-right">
+                            <img class="centerImg" src="images/userThree.jpg" width="550" height="300" alt="user three persona card">
+                            <img class="centerImg" src="images/userFour.jpg" width="550" height="300" alt="user four persona card">
+                        </div>
+                    </div>    
                 </div>
 
                 <!-- design section | user personas -->
@@ -216,34 +231,42 @@
                 <div class="wmdFuture">
 
                     <div class="col-2 newFeature">
-                        <h3>Grooming</h3>
-                        <p class="description">
-                            This will enable customers to purchase an
-                            added service to have their dogs groomed.
-                        </p>
+                        <h3 style="text-align: left;">Grooming</h3>
+                            <ul class="futureListing">
+                                <li>
+                                    This will enable customers to purchase an
+                                    added service to have their dogs groomed.
+                                </li>
+                            </ul>                        
                     </div>
                     <div class="col-2 newFeature">
-                        <h3>Products</h3>
-                        <p class="description">
-                            This feature will enable customers to buy
+                        <h3 style="text-align: left;">Products</h3>
+                        <ul class="futureListing">
+                            <li>
+                                This feature will enable customers to buy
                             original & third-party WalkMyDog merchandise.
-                        </p>
+                            </li>
+                        </ul>       
                     </div>
                     <div class="col-2 newFeature">
-                        <h3>Training</h3>
-                        <p class="description">
-                            This feature will enable dog owners on the app 
-                            to purchase dog training sessions to meet their
-                            dog's needs.
-                        </p>
+                        <h3 style="text-align: left;">Training</h3>
+                        <ul class="futureListing">
+                            <li>
+                                This feature will enable dog owners on the app 
+                                to purchase dog training sessions to meet their
+                                dog's needs.
+                            </li>
+                        </ul>   
                     </div>
                     <div class="col-2 newFeature">
-                        <h3>Promotions & Gifts</h3>
-                        <p class="description">
-                            This feature will enable customers to redeem 
+                        <h3 style="text-align: left;">Promotions & Gifts</h3>
+                        <ul class="futureListing">
+                            <li>
+                                This feature will enable customers to redeem 
                             special rates or discounts on services or
                             future products.
-                        </p>
+                            </li>
+                        </ul> 
                     </div>
 
                 </div>

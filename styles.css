@@ -5,6 +5,10 @@
   scroll-behavior: smooth;
 }
 
+/*.container {
+  max-width: 100%;
+}*/
+
 [class*="col"] {
   height: auto;
   width: 100%;
@@ -29,6 +33,7 @@ h2 {
   font-weight: 400;
   letter-spacing: 0.5px;
   color: #626262;
+  text-align: center;
 }
 
 h3 {
@@ -46,6 +51,7 @@ h4 {
   font-weight: 600;
   letter-spacing: 0.8px;
   color: #ff914d;
+  text-align: center;
 }
 
 h5 {
@@ -57,6 +63,9 @@ h5 {
 }
 
 /*paragraphs*/
+.desktopInfo {
+  display: none;
+}
 .information {
   font-family: "Nunito Sans", sans-serif;
   font-size: 12px;
@@ -106,6 +115,8 @@ img {
 }
 
 .dogImg {
+  display: flex;
+  justify-content: center;
   margin: 50px 0px;
   padding: 0px 50px;
 }
@@ -146,6 +157,11 @@ li {
   line-height: 1.5;
   color: #626262;
   margin: 10px 0px;
+}
+
+.userCard-left,
+.userCard-right {
+  width: auto;
 }
 
 .dataFlow {
@@ -227,33 +243,84 @@ i {
 }
 
 /* For Desktop */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1024px) {
   [class*="col"] {
-    padding: 50px;
+    padding: 35px;
+  }
+
+  .header {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .banner {
+    width: 100%;
   }
 
   h1 {
     font-size: 2.5vw;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 3.5vw;
+  }
+
+  h4 {
+    font-size: 18px;
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+
+  .description {
+    font-size: 18px;
+    text-align: left;
+    padding: 0px;
+  }
+
+  .desktopInfo {
+    display: block;
+    font-size: 18px;
+    margin-left: 0px;
   }
 
   .information,
   .infoSub {
-    margin-left: 4px;
+    font-size: 18px;
+    margin: 0px;
+  }
+
+  .mobileInfo {
+    display: none;
+  }
+
+  .info {
+    padding: 30px;
   }
 
   .wmdContext,
   .dogImg {
-    padding-bottom: 150px;
+    padding-bottom: 50px;
   }
 
   .wmd-wrapper {
     /*padding: 40px;*/
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 200px;
+    padding-right: 200px;
   }
 
   .risk-req-wrapper {
     padding: 20px;
+  }
+
+  .listing {
+    padding-left: 80px;
+  }
+
+  li {
+    font-size: 18px;
   }
 
   .col-1 {
@@ -288,17 +355,14 @@ i {
     float: right;
   }
 
-  .userCard-left,
-  .userCard-right {
-    width: 500px;
-    height: 700px;
-    margin-left: 0px;
-    padding-bottom: 100px;
+  .userCard-left {
+    width: 550px;
+    float: right;
   }
 
-  .usersLeft,
-  .usersRight {
-    padding: 0px 0px 100px 0px;
+  .userCard-right {
+    width: 550px;
+    float: left;
   }
 
   .userFlowchart {
@@ -346,6 +410,10 @@ i {
 
   .wmdColors {
     width: 100%;
+  }
+
+  .wmdFuture {
+    padding: 50px;
   }
 
   h1 {

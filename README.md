@@ -6,4 +6,4 @@ data flows, and various mockups created throughout the process.
 
 ## Technologies Used
 
-As of right now this site was created using vanilla HTML & Javascript.
+As of right now this site was created using vanilla HTML & CSS.

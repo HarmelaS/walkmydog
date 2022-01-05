@@ -81,6 +81,7 @@ h5 {
   font-weight: 400;
   letter-spacing: 1.6px;
   color: #ff914d;
+  text-align: left;
 }
 
 .description {
@@ -102,6 +103,9 @@ h5 {
   padding-bottom: 20px;
 }
 
+.bttButton:hover {
+  color: red;
+}
 /* main */
 
 img {
@@ -174,29 +178,62 @@ li {
   padding-bottom: 50px;
 }
 
-.mobileImg,
-.centerImg {
+.mobileImg {
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+.centerImg {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.desktopFigma {
+  display: none;
+}
+
+.mobileFigma {
+  display: block;
+}
+
+.wmdFuture {
+  height: auto;
+  margin-top: 50px;
 }
 
 .newFeature:last-child {
   padding-bottom: 50px;
 }
 
+ul.futureListing {
+  width: auto;
+  list-style-type: none;
+  padding: 0px;
+  text-align: center;
+}
+
 .footer {
   margin-bottom: 0px;
   height: auto;
   background-color: #ff914d;
+  display: block;
   text-align: center;
+  /*justify-content: space-between;*/
 }
 
 .footerDesc {
   color: white;
   font-family: "Nunito Sans", sans-serif;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
+}
+
+.link {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .portLink {
@@ -204,7 +241,7 @@ li {
   font-family: "Nunito Sans", sans-serif;
   font-size: 18px;
   text-decoration: underline;
-  font-weight: 300;
+  font-weight: 400;
   cursor: pointer;
 }
 
@@ -212,34 +249,37 @@ li {
   color: #626262;
 }
 
+.footerContent {
+  text-align: center;
+}
+
+.figma-mock {
+  width: 500px;
+}
+
 .buttonWrapper {
-  padding-top: 40px;
-  padding-bottom: 0px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 25px;
 }
 
-.fas:hover,
-.backToTop:hover {
-  color: #626262;
+span {
+  text-align: center;
+  display: block;
 }
 
-.backToTop {
-  text-decoration: none;
-}
-
-i {
-  color: white;
+.edit {
   font-family: "Nunito Sans", sans-serif;
   font-size: 18px;
-  font-weight: 300;
-  text-decoration: none;
+  font-weight: 400;
 }
 
-.fas {
+.bttn {
   color: #ffffff;
 }
 
-.backToTop:hover {
-  color: #ff914d;
+.bttn:hover {
+  color: #626262;
 }
 
 /* For Desktop */
@@ -366,7 +406,7 @@ i {
   }
 
   .userFlowchart {
-    width: 1000px;
+    /*width: 1000px;*/
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -374,7 +414,7 @@ i {
   }
 
   .dataFlow {
-    width: 800px;
+    width: 900px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -398,6 +438,12 @@ i {
 
   .desktopImg {
     display: block;
+    margin-left: 30px;
+  }
+
+  .centerImg {
+    float: right;
+    margin-right: 30px;
   }
 
   .colorSwatch {
@@ -413,10 +459,68 @@ i {
   }
 
   .wmdFuture {
-    padding: 50px;
+    margin: 0 auto;
+    display: block;
+    height: 350px;
+    margin-top: 50px;
+  }
+
+  ul.futureListing {
+    margin: 0 auto;
+    width: 500px;
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .footer {
+    margin-bottom: 0px;
+    height: auto;
+    background-color: #ff914d;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footerContent {
+    text-align: left;
+  }
+
+  .buttonWrapper {
+    margin-top: 0px;
   }
 
   h1 {
     font-size: 3vw;
+  }
+
+  .lowFed-mock,
+  .highFed-mock,
+  .figma-window {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .figma-mock {
+    width: auto;
+  }
+
+  .mockup {
+    padding: 10px;
+  }
+
+  .mobileFigma {
+    display: none;
+  }
+
+  .desktopFigma {
+    display: block;
+  }
+
+  @media screen and (max-width: 768px) {
+    .desktop__v {
+      display: none;
+    }
   }
 }
